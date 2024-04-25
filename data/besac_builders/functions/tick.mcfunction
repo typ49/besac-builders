@@ -5,7 +5,7 @@ execute as @e[type=area_effect_cloud,tag=portail] run data modify entity @s Age 
 execute as @e[type=area_effect_cloud,tag=transfert_besancon] at @s if block ~ ~ ~ hopper run data modify entity @s Age set value 0
 
 #Réinitialisation de la durée de vie des area_effect_cloud servant de coffres de récupération
-execute as @e[type=area_effect_cloud,tag=coffre_recuperation,tag=!redondant] at @s if block ~ ~ ~ ironchests:copper_chest run data modify entity @s Age set value 0
+execute as @e[type=area_effect_cloud,tag=coffre_recuperation,tag=!redondant] at @s if block ~ ~ ~ ironchest:copper_chest run data modify entity @s Age set value 0
 
 #Actualisation du contenu des transferts d'objets
 scoreboard players add @e[type=area_effect_cloud,tag=transfert_besancon] transfer_timer 1
