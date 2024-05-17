@@ -2,8 +2,8 @@
 execute as @e[type=area_effect_cloud,tag=transfert_besancon] at @s align xyz run particle minecraft:portal ~0.5 ~0.8 ~0.5 0.1 0 0.1 0.2 1 normal
 
 #Affichage des particules ambiantes des coffres personnels
-execute as @e[type=area_effect_cloud,tag=coffre_recuperation,tag=!redondant] at @s align xyz run execute if block ~ ~ ~ ironchest:copper_chest unless block ~ ~ ~ ironchest:copper_chest{Items:[]} run particle minecraft:composter ~0.5 ~0.4 ~0.5 0.4 0.4 0.4 0 1 normal
-execute as @e[type=area_effect_cloud,tag=coffre_recuperation,tag=!redondant] at @s align xyz run execute if block ~ ~ ~ ironchest:copper_chest{Items:[]} run particle minecraft:crimson_spore ~0.5 ~0.4 ~0.5 0.3 0.3 0.3 0.02 1 normal
+# execute as @e[type=area_effect_cloud,tag=coffre_recuperation,tag=!redondant] at @s align xyz run execute if block ~ ~ ~ ironchest:copper_chest unless block ~ ~ ~ ironchest:copper_chest{Items:[]} run particle minecraft:composter ~0.5 ~0.4 ~0.5 0.4 0.4 0.4 0 1 normal
+# execute as @e[type=area_effect_cloud,tag=coffre_recuperation,tag=!redondant] at @s align xyz run execute if block ~ ~ ~ ironchest:copper_chest{Items:[]} run particle minecraft:crimson_spore ~0.5 ~0.4 ~0.5 0.3 0.3 0.3 0.02 1 normal
 
 #Forcer le gamemode dans ce monde
 gamemode survival @a[gamemode=!survival,tag=!besac_admin]
